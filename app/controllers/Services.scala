@@ -5,7 +5,7 @@ import mvc.{Action, Controller}
 
 /**
  * Created with IntelliJ IDEA.
- * User: dmitriyr
+ * User: lena
  * Date: 7/17/12
  * Time: 2:01 PM
  * To change this template use File | Settings | File Templates.
