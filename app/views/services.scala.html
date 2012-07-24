@@ -1,0 +1,30 @@
+@(status:String, listOfServices: Seq[Any])
+
+@main("List of BEEN Services") {
+
+<div class="services" xmlns="http://www.w3.org/1999/html">
+        <table border="1">
+            <tr>
+                <td>Service</td>
+                <td>Status</td>
+                <td>Host</td>
+            </tr>
+
+            <tr>
+                <td>Software Repository</td>
+                <td>@status</td>
+                <td>
+                    <form class="startService" method="POST">
+                        <input type="hidden" name="service_id" value="softwarerepository" />
+                        <input type="hidden" name="status" value="@status" />
+                        <input type="text" name="service_host" placeholder="Host name.." />
+                        <input type="submit" value="start/stop" title="toggle"/>
+                    </form>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+
+}
