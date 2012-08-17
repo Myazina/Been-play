@@ -19,6 +19,32 @@ case class ServiceInfo(
 
 object Services extends Controller {
 
+  var listOfServices = List(ServiceInfo("softwarerepository", "Software Repository", "hostmanager", "Host Manager"))
+  var status = "OFF"
+  var host = ""
+  def create(host: String) {}
+  if host = "" "Error"
+  else
+  host = "localhost" println("localhost")
+  else   host != ""  println("Error!!!")
+  def list(host:String) = Action {
+    Ok("it is " + host)
+  }
+
+
+  //listOfServices += ServiceInfo("softwarerepository", "Software Repository")
+
+  //listOfServices += ServiceInfo("hostmanager" -> "Host Manager")
+  //listOfServices += ServiceInfo("benchmarkmanager" -> "Benchmark Manager")
+  //listOfServices += ServiceInfo("resultsrepository" -> "Results Repository")
+
+
+  def Host: scala.Seq[Any]
+
+
+
+  object Services extends Controller {
+
   var listOfServices = List(ServiceInfo("softwarerepository", "Software Repository"))
   var status = "OFF"
   //listOfServices += ServiceInfo("softwarerepository", "Software Repository")
