@@ -23,6 +23,36 @@
                 </td>
             </tr>
 
+            <tr>
+                <td>Benchmark Manager</td>
+                <td>@status</td>
+                <td>
+                    <form class="startService" method="POST">
+                        <input type="hidden" name="service_id" value="benchmarkmanager" />
+                        <input type="hidden" name="status" value="@status" />
+                        <input type="text" name="service_host" placeholder="Host name.." />
+                        <input type="submit" value="start" title="toggle"/>
+                        <input type="submit" value="stop" title="toggle"/>
+                        <input type="submit" value="restart" title="toggle"/>
+                    </form>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Results Repository</td>
+                <td>@status</td>
+                <td>
+                    <form class="startService" method="POST">
+                        <input type="hidden" name="service_id" value="resultsrepository" />
+                        <input type="hidden" name="status" value="@status" />
+                        <input type="text" name="service_host" placeholder="Host name.." />
+                        <input type="submit" value="start" title="toggle"/>
+                        <input type="submit" value="stop" title="toggle"/>
+                        <input type="submit" value="restart" title="toggle"/>
+                    </form>
+                </td>
+            </tr>
         </table>
     </div>
 
